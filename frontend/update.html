@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Update Card</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <h2>Update Existing Card</h2>
+    <form id="update-card-form">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="type">Type:</label>
+        <input type="text" id="type" name="type" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="rarity">Rarity:</label>
+        <select id="rarity" name="rarity" class="form-control">
+          <option>Common</option>
+          <option>Uncommon</option>
+          <option>Rare</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="description">Description:</label>
+        <textarea id="description" name="description" class="form-control"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="image_url">Image URL:</label>
+        <input type="text" id="image_url" name="image_url" class="form-control">
+      </div>
+      <button type="submit" class="btn btn-primary">Update</button>
+    </form>
+  </div>
+  <script src="js/update.js"></script>
+</body>
+
+</html>

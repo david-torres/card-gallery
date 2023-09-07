@@ -1,0 +1,55 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 20px;
+}
+
+/* Gallery Styles */
+#card-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 15px;
+    width: calc(33.333% - 20px);
+    box-sizing: border-box;
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+}
+
+/* Form Styles */
+form {
+    max-width: 500px;
+    margin: auto;
+}
+
+form input[type="text"],
+form select {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+form button:hover {
+    opacity: 0.8;
+}
